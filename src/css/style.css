@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    border: none;
+    text-decoration: none;
+}
+body{
+    background-color: #1C1E26;
+}
+.slider{
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+.slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    min-width: 100vw;
+    scroll-snap-align: center;
+    background: no-repeat;
+    background-size: cover;
+}
+.slide__element{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 500px;
+    min-width: 500px;
+    color: white;
+    font-size: 52px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 1px rgb(255, 255, 255, 0.2) solid;
+}
+.b{
+    background-image: url(../img/night.png);
+}
+.r{
+    background-image: url(../img/dawn.png);
+}
