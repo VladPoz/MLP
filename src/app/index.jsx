@@ -20,16 +20,16 @@ function Index() {
     return (
         <div className="main">
             <div className="slider" ref={sliderRef}>
-                <div className="slide b">
-                    <button className="slider__btn right" onClick={SlideRight}>
+                <div className="slide background background__lection">
+                    <button className="slider__btn right btn" onClick={SlideRight}>
                         <img className="icon" src={Right} />
                     </button>
                     <Link to="/lection">
                         <div className="slide__element"><h3>Lection</h3></div>
                     </Link>
                 </div>
-                <div className="slide r">
-                    <button className="slider__btn left" onClick={SlideLeft}>
+                <div className="slide background background__practice">
+                    <button className="slider__btn left btn" onClick={SlideLeft}>
                         <img className="icon" src={Left} />
                     </button>
                     <Link to="/practice">

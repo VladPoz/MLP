@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function practice(){
+function Practice(){
     return(
         <Link to={'/'}>Back</Link>
     );
 }
 
-export default practice;
+export default Practice;
