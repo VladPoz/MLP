@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 import { Link } from "react-router-dom";
 
-function Lection(){
+export default function Lection(){
     const [items, setItems] = useState([]);
 
     useEffect(()=>{
@@ -21,15 +21,12 @@ function Lection(){
             <div className="main__contents">
                 <ul className="list">
                     {items.map(item => (
-                        <Link to={item.id}>
+                        <Link to={`/lection/${item.id}`}>
                             <li className="list__element">{item.id}. {item.name}</li>
                         </Link>
                     ))}
                 </ul>
             </div>
         </div>
-
     )
-}
-
-export default Lection
+};

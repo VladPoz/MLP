@@ -1,10 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function Practice(){
+export default function Practice(){
     return(
-        <Link to={'/'}>Back</Link>
+        <div className="background background__practice">
+            <div className="back">
+                <Link to={'/'}><button className="back__btn btn"><h3>Back</h3></button></Link>
+            </div>
+            <div className="main__contents">
+            </div>
+        </div>
     );
-}
-
-export default Practice;
+};

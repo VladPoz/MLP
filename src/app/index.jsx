@@ -3,7 +3,7 @@ import Right from "../img/icon/right.svg";
 import Left from "../img/icon/left.svg"
 import { Link } from "react-router-dom";
 
-function Index() {
+export default function Index() {
     const sliderRef = useRef();
     function SlideRight() {
         sliderRef.current.scrollBy({
@@ -39,6 +39,4 @@ function Index() {
             </div>
         </div>
     );
-}
-
-export default Index;
+};

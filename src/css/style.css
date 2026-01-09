@@ -2,9 +2,10 @@
     margin: 0;
     border: none;
     text-decoration: none;
+    user-select: none;
 }
 body{
-    background-color: #1C1E26;
+    background-color: #000000;
 }
 .main__contents{
     display: flex;
@@ -18,12 +19,11 @@ body{
 }
 .slider{
     display: flex;
-    overflow-x: hidden;
+    overflow-x: scroll;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
 }
 .slide{
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -88,7 +88,6 @@ body{
 .list__element:hover::after{
     height: 4px;
     transform: scaleX(1.03);
-    /* background-color: rgb(195, 195, 195); */
 }
 /* All backgroun style */
 .background{
@@ -99,10 +98,14 @@ body{
     background-repeat: no-repeat;
 }
 .background__lection{
-    background-image: url(../img/background/night_w.png);
+    /* background-image: url(../img/background/purple.jpg); */
+    background:
+    conic-gradient(from 30deg at 10% 100%,rgba(120, 90, 200, 0.45) 0%,transparent 30%,rgba(170, 130, 230, 0.45) 100%) 0% 55% / 130% 105%,
+    linear-gradient(75deg,rgb(120, 90, 200) 0%,rgb(135, 105, 215) 35%,rgb(150, 120, 225) 55%,rgb(165, 135, 235) 75%,rgb(140, 110, 210) 100%);
 }
 .background__practice{
-    background-image: url(../img/background/dawn_w.png);
+    background-image: url(../img/background/red.jpg);
+
 }
 /* All btn style */
 .btn{

@@ -1,6 +1,7 @@
 import React from "react";
 import Index from "./app/index";
 import Lection from "./app/lection";
+import LectionPage from "./app/lectionPage";
 import Practice from "./app/practice";
 import {Routes, Route, BrowserRouter} from "react-router-dom";
 
@@ -10,6 +11,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Index />}/>
         <Route path="/lection" element={<Lection />}/>
+        <Route path="/lection/:id" element={<LectionPage />}/>
         <Route path="/practice" element={<Practice />}/>
       </Routes>
     </BrowserRouter>
