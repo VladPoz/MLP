@@ -5,13 +5,14 @@
     user-select: none;
 }
 body{
-    background-color: #000000;
+    background-color: rgb(40, 40, 40);
 }
 .main__contents{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    min-height: 100vh;
 }
 .icon{
     height: 45px;
@@ -19,7 +20,7 @@ body{
 }
 .slider{
     display: flex;
-    overflow-x: scroll;
+    overflow-x: hidden;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
 }
@@ -88,6 +89,28 @@ body{
 .list__element:hover::after{
     height: 4px;
     transform: scaleX(1.03);
+}
+.lection__contents{
+    display: flex;
+    justify-content: center;
+    min-height: calc(100vh);
+    padding-top: calc(6vh + 6px);
+    background: transparent;
+}
+.lection__document{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+.menu{
+    width: 100vw;
+    height: 6vh;
+    background-color: #3c3c3c;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
 }
 /* All backgroun style */
 .background{
